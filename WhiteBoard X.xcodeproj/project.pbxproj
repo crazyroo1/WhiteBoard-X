@@ -11,6 +11,12 @@
 		9750EB452670145900BA1151 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750EB442670145900BA1151 /* ContentView.swift */; };
 		9750EB472670145A00BA1151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9750EB462670145A00BA1151 /* Assets.xcassets */; };
 		9750EB4A2670145A00BA1151 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9750EB492670145A00BA1151 /* Preview Assets.xcassets */; };
+		9750EB51267014D200BA1151 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750EB50267014D200BA1151 /* CanvasView.swift */; };
+		9750EB532670157B00BA1151 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750EB522670157B00BA1151 /* DrawingView.swift */; };
+		9750EB7126704D7700BA1151 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 9750EB7026704D7700BA1151 /* AlertToast */; };
+		9750EB762671D76100BA1151 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750EB752671D76100BA1151 /* Extensions.swift */; };
+		9750EB782671D7A500BA1151 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750EB772671D7A500BA1151 /* ActivityViewController.swift */; };
+		9750EB7A2671D7D100BA1151 /* FloatingViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9750EB792671D7D100BA1151 /* FloatingViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		9750EB442670145900BA1151 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9750EB462670145A00BA1151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9750EB492670145A00BA1151 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9750EB50267014D200BA1151 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		9750EB522670157B00BA1151 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		9750EB722670608000BA1151 /* WhiteBoard-X-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WhiteBoard-X-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9750EB752671D76100BA1151 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9750EB772671D7A500BA1151 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		9750EB792671D7D100BA1151 /* FloatingViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9750EB7126704D7700BA1151 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +64,14 @@
 		9750EB412670145900BA1151 /* WhiteBoard X */ = {
 			isa = PBXGroup;
 			children = (
+				9750EB722670608000BA1151 /* WhiteBoard-X-Info.plist */,
 				9750EB422670145900BA1151 /* WhiteBoard_XApp.swift */,
 				9750EB442670145900BA1151 /* ContentView.swift */,
+				9750EB522670157B00BA1151 /* DrawingView.swift */,
+				9750EB50267014D200BA1151 /* CanvasView.swift */,
+				9750EB792671D7D100BA1151 /* FloatingViews.swift */,
+				9750EB772671D7A500BA1151 /* ActivityViewController.swift */,
+				9750EB752671D76100BA1151 /* Extensions.swift */,
 				9750EB462670145A00BA1151 /* Assets.xcassets */,
 				9750EB482670145A00BA1151 /* Preview Content */,
 			);
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = "WhiteBoard X";
+			packageProductDependencies = (
+				9750EB7026704D7700BA1151 /* AlertToast */,
+			);
 			productName = "WhiteBoard X";
 			productReference = 9750EB3F2670145900BA1151 /* WhiteBoard X.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 9750EB362670145900BA1151;
+			packageReferences = (
+				9750EB6F26704D7700BA1151 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 9750EB402670145900BA1151 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9750EB762671D76100BA1151 /* Extensions.swift in Sources */,
+				9750EB782671D7A500BA1151 /* ActivityViewController.swift in Sources */,
 				9750EB452670145900BA1151 /* ContentView.swift in Sources */,
 				9750EB432670145900BA1151 /* WhiteBoard_XApp.swift in Sources */,
+				9750EB51267014D200BA1151 /* CanvasView.swift in Sources */,
+				9750EB7A2671D7D100BA1151 /* FloatingViews.swift in Sources */,
+				9750EB532670157B00BA1151 /* DrawingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +302,16 @@
 				DEVELOPMENT_TEAM = 7V8VARWU3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WhiteBoard-X-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "WhiteBoard X";
+				INFOPLIST_KEY_CFBundleName = "WhiteBoard X";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +336,16 @@
 				DEVELOPMENT_TEAM = 7V8VARWU3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WhiteBoard-X-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "WhiteBoard X";
+				INFOPLIST_KEY_CFBundleName = "WhiteBoard X";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9750EB6F26704D7700BA1151 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9750EB7026704D7700BA1151 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9750EB6F26704D7700BA1151 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9750EB372670145900BA1151 /* Project object */;
 }
